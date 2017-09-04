@@ -1,0 +1,62 @@
+@import "variables.scss";
+@import "utils.scss";
+
+$card-border-radius: 3px;
+
+.m-card {
+    @include border-radius($card-border-radius);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+        0 1px 5px 0 rgba(0, 0, 0, 0.12);
+
+    .m-card__cover-image {
+        display: block;
+
+        img {
+            @include border-corner-radius($card-border-radius, top-left);
+            @include border-corner-radius($card-border-radius, top-right);
+        }
+    }
+
+    .m-card__header,
+    .m-card__content,
+    .m-card__actions {
+        padding: 20px 10px;
+    }
+
+    .m-card__header {
+        border-bottom: 1px solid $color-separator;
+
+        .m-card__header-title,
+        .m-card__header-subtitle {
+            margin: 0;
+        }
+
+        .m-card__header-title {
+            @include font-size(2);
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        .m-card__header-subtitle {
+        }
+    }
+
+    .m-card__content {
+        border-bottom: 1px solid $color-separator;
+
+        * {
+            @include font-size(1);
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+
+    .m-card__actions {
+        .m-card__actions-item {
+            &:hover {
+            }
+        }
+    }
+}

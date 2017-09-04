@@ -1,0 +1,22 @@
+@import "variables.scss";
+
+.m-header {
+    height: $header-height;
+    background-color: $color-primary;
+    color: $color-primary-inverse;
+
+    .m-header__brand {
+        padding: 12px;
+    }
+
+    .m-header__navigation {
+        font-family: $typo-mono-font;
+        line-height: $header-height;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+
+        a:hover {
+            border-color: $color-primary-inverse;
+        }
+    }
+}

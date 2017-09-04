@@ -1,0 +1,15 @@
+.m-stage {
+    position: relative;
+
+    .m-stage__content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .m-stage__background-image {
+        width: 100%;
+        height: auto;
+    }
+}

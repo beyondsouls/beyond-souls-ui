@@ -1,13 +1,16 @@
-@import "variables.scss";
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono');
 
-@mixin font-size($sizeValue: 1.6, $lineValue: $sizeValue * 1.5) {
-    font-size: ($sizeValue * 10) + px;
-    font-size: $sizeValue + rem;
-    line-height: $lineValue;
-}
+@import "variables.scss";
+@import "queries.scss";
+@import "utils.scss";
 
 html {
+    font-family: $typo-body-font;
     font-size: $typo-initial-font-size;
+
+    @include mq("phone", "max") {
+        font-size: $typo-initial-font-size * 1.1;
+    }
 }
 
 h1,
@@ -19,7 +22,7 @@ h6 {
     margin-top: 0;
     margin-bottom: 2rem;
     font-weight: 400;
-    font-family: $typo-fallback-font;
+    font-family: $typo-mono-font;
 }
 
 h1 {
@@ -49,7 +52,7 @@ h6 {
 p {
     margin-top: 0;
     margin-bottom: 2rem;
-    @include font-size(1.5);
+    @include font-size(1.2);
 }
 
 @media (max-width: $breakpoint-phone) {

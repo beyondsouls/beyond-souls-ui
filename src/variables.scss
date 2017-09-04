@@ -1,10 +1,16 @@
 // Typography
-$typo-initial-font-size: 62.5%; // 10px
-$typo-fallback-font: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
-    sans-serif;
+$typo-initial-font-size: 16px;
+$typo-macos-fallback-font: -apple-system, BlinkMacSystemFont;
+$typo-windows-fallback-font: "Helvetica Neue";
+$typo-initial-line-multiplier: 1.1;
+$typo-mono-font: "Roboto Mono", monospace;
+$typo-body-font: "Roboto", $typo-macos-fallback-font, $typo-windows-fallback-font, sans-serif;
+
+// Layout
+$header-height: 80px;
 
 // Grid
-$container-max-width: 960px;
+$container-max-width: 1200px;
 $container-spread-width: 80%;
 $container-column-count: 12;
 $container-column-margin: 4%;
@@ -14,4 +20,7 @@ $breakpoint-phone: 400px;
 $breakpoint-tablet: 768px;
 
 // Colors
-$color-contour-grey: #333030;
+$color-primary: #000000;
+$color-primary-inverse: #ffffff;
+$color-contour: #333030;
+$color-separator: #dedede;

@@ -8,6 +8,8 @@
     "table",
     "button",
     "card",
+    "stage",
     "widget",
-    "list"
+    "list",
+    "tag"
 ]

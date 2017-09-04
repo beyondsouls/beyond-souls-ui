@@ -4,13 +4,13 @@
     width: 100% / $container-column-count * $column - $container-column-margin;
 }
 
-.container {
+.o-grid {
     max-width: $container-max-width;
     margin: 0 auto;
     width: $container-spread-width;
 }
 
-.row {
+.o-grid__row {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -20,28 +20,37 @@
     & > :first-child {
         margin-left: 0;
     }
+
+    &.o-grid__row--layout-only {
+        margin: 0;
+    }
+
+    &.o-grid__row--autofit {
+        height: 100%;
+        width: 100%;
+    }
 }
 
-.col {
+.o-grid__col {
     flex: 1 1 0px;
 }
 
-.col,
-[class^="col-"],
-[class*=" col-"] {
+.o-grid__col,
+[class^="o-grid__col-"],
+[class*=" o-grid__col-"] {
     margin-left: $container-column-margin;
 }
 
 @for $i from 1 to 13 {
-    .col-#{$i} {
+    .o-grid__col-#{$i} {
         @include calculate-column-size($i);
     }
 }
 
 @media screen and (max-width: 768px) {
-    .col,
-    [class^="col-"],
-    [class*=" col-"] {
+    .o-grid__col,
+    [class^="o-grid__col-"],
+    [class*=" o-grid__col-"] {
         margin: 1rem 0;
         flex: 0 0 100%;
     }

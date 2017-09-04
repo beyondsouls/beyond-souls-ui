@@ -1,16 +1,24 @@
-.button {
-    border: 1px solid #000;
-    border-color: #000;
-    background-color: #000;
-    color: #fff;
+@import "variables.scss";
+@import "utils.scss";
 
-    &.button--light {
-        border-color: #fff;
-        background-color: #fff;
-        color: #000;
+.a-button {
+    @include border-radius(3px);
+    @include font-size(0.8);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 8px 15px;
+    border: 1px solid $color-primary;
+    border-color: $color-primary;
+    background-color: $color-primary;
+    color: $color-primary-inverse;
+
+    &.a-button--light {
+        border-color: $color-primary-inverse;
+        background-color: $color-primary-inverse;
+        color: $color-primary;
     }
 
-    &.button--contoured {
+    &.a-button--contoured {
         background-color: transparent;
     }
 }

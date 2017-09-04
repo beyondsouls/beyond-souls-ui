@@ -1,8 +1,28 @@
+@import "variables.scss";
+
+@mixin font-size($sizeValue: 1.6, $lineValue: $sizeValue * $typo-initial-line-multiplier) {
+    font-size: ($sizeValue * 10) + px;
+    font-size: $sizeValue + rem;
+    line-height: $lineValue + rem;
+}
+
 @mixin border-radius($radius) {
     -webkit-border-radius: $radius;
     -moz-border-radius: $radius;
     -ms-border-radius: $radius;
     border-radius: $radius;
+}
+
+@mixin border-corner-radius($radius: 0px, $position: top-left) {
+    -webkit-border-#{$position}-radius: $radius;
+    -moz-border-#{$position}-radius: $radius;
+    -ms-border-#{$position}-radius: $radius;
+    border-#{$position}-radius: $radius;
+}
+
+@mixin transform($args...) {
+    -webkit-transform: $args;
+    transform: $args;
 }
 
 @mixin keyframes($animation-name) {
@@ -37,6 +57,12 @@
     -ms-transition: $args;
     -o-transition: $args;
     transition: $args;
+}
+
+@mixin box-sizing($type) {
+    -webkit-box-sizing: $type;
+    -moz-box-sizing: $type;
+    box-sizing: $type;
 }
 
 @mixin opacity($opacity) {
@@ -98,4 +124,24 @@
     clip: rect(0 0 0 0);
     clip: rect(0, 0, 0, 0);
     position: absolute;
+}
+
+.u-text-align-left {
+    text-align: left;
+}
+
+.u-text-align-right {
+    text-align: right;
+}
+
+.u-text-align-center {
+    text-align: center;
+}
+
+.u-pull-right {
+    float: right;
+}
+
+.u-pull-left {
+    float: left;
 }

@@ -1,0 +1,27 @@
+@import "variables.scss";
+@import "utils.scss";
+
+$tag-skew-effect: 20;
+
+.a-tag {
+    will-change: background-color;
+    display: inline-block;
+    background-color: $color-primary;
+    border: 1px solid $color-primary;
+    color: $color-primary-inverse;
+    @include transition(background-color 0.2s ease-in-out);
+    @include transform(skew(-#{$tag-skew-effect}deg));
+
+    &:hover {
+        background-color: transparent;
+    }
+
+    .a-tag__label {
+        width: 100%;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        padding: 5px 12px 3px;
+        word-break: keep-all;
+        @include transform(skew(#{$tag-skew-effect}deg));
+    }
+}
