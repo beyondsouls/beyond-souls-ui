@@ -1,1 +1,13 @@
-["base", "typography", "grid", "table"]
+[
+    "base",
+    "typography",
+    "grid",
+    "header",
+    "footer",
+    "navigation",
+    "table",
+    "button",
+    "card",
+    "widget",
+    "list"
+]
