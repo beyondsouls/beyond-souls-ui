@@ -18,7 +18,7 @@ gulp.task("build", function() {
         .pipe(plugins.sass().on("error", plugins.sass.logError))
         .pipe(plugins.concat(`${pkg.build.name}.css`))
         .pipe(plugins.header(comment + "\n"))
-        .pipe(plugins.sourcemaps.write(`${pkg.build.target}`))
+        .pipe(plugins.sourcemaps.write("."))
         .pipe(plugins.size())
         .pipe(gulp.dest(`${pkg.build.target}`));
 });
