@@ -1,0 +1,16 @@
+.button {
+    border: 1px solid #000;
+    border-color: #000;
+    background-color: #000;
+    color: #fff;
+
+    &.button--light {
+        border-color: #fff;
+        background-color: #fff;
+        color: #000;
+    }
+
+    &.button--contoured {
+        background-color: transparent;
+    }
+}
