@@ -1,0 +1,192 @@
+/**
+ * Beyond Souls UI v1.0.0
+ * Copyright 2017 Beyond Souls Records KLG
+ * Released under the Apache License 2.0
+ */
+
+
+html {
+  font-size: 62.5%; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif; }
+
+h1 {
+  font-size: 50px;
+  font-size: 5rem;
+  line-height: 7.5; }
+
+h2 {
+  font-size: 42px;
+  font-size: 4.2rem;
+  line-height: 6.3; }
+
+h3 {
+  font-size: 36px;
+  font-size: 3.6rem;
+  line-height: 5.4; }
+
+h4 {
+  font-size: 30px;
+  font-size: 3rem;
+  line-height: 4.5; }
+
+h5 {
+  font-size: 24px;
+  font-size: 2.4rem;
+  line-height: 3.6; }
+
+h6 {
+  font-size: 18px;
+  font-size: 1.8rem;
+  line-height: 2.7; }
+
+p {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 2.25; }
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: 40rempx;
+    font-size: 4remrem;
+    line-height: 6rem; }
+  h2 {
+    font-size: 35rempx;
+    font-size: 3.5remrem;
+    line-height: 5.25rem; }
+  h3 {
+    font-size: 30rempx;
+    font-size: 3remrem;
+    line-height: 4.5rem; }
+  h4 {
+    font-size: 26rempx;
+    font-size: 2.6remrem;
+    line-height: 3.9rem; }
+  h5 {
+    font-size: 22rempx;
+    font-size: 2.2remrem;
+    line-height: 3.3rem; }
+  h6 {
+    font-size: 18rempx;
+    font-size: 1.8remrem;
+    line-height: 2.7rem; } }
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  width: 80%; }
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin: 1rem 0; }
+  .row > :first-child {
+    margin-left: 0; }
+
+.col {
+  flex: 1 1 0px; }
+
+.col,
+[class^="col-"],
+[class*=" col-"] {
+  margin-left: 4%; }
+
+.col-1 {
+  width: 4.33333%; }
+
+.col-2 {
+  width: 12.66667%; }
+
+.col-3 {
+  width: 21%; }
+
+.col-4 {
+  width: 29.33333%; }
+
+.col-5 {
+  width: 37.66667%; }
+
+.col-6 {
+  width: 46%; }
+
+.col-7 {
+  width: 54.33333%; }
+
+.col-8 {
+  width: 62.66667%; }
+
+.col-9 {
+  width: 71%; }
+
+.col-10 {
+  width: 79.33333%; }
+
+.col-11 {
+  width: 87.66667%; }
+
+.col-12 {
+  width: 96%; }
+
+@media screen and (max-width: 768px) {
+  .col,
+  [class^="col-"],
+  [class*=" col-"] {
+    margin: 1rem 0;
+    flex: 0 0 100%; } }
+
+.table {
+  width: 100%;
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: left; }
+  .table thead {
+    border-bottom: 2px solid #333030; }
+  .table th,
+  .table td {
+    vertical-align: middle;
+    padding: 12px 4px; }
+  .table.table--responsive {
+    position: relative;
+    display: block; }
+    .table.table--responsive th,
+    .table.table--responsive td {
+      margin: 0; }
+    .table.table--responsive thead {
+      display: block;
+      float: left;
+      border: 0; }
+      .table.table--responsive thead tr {
+        display: block;
+        padding: 0 10px 0 0;
+        border-right: 2px solid #333030; }
+    .table.table--responsive .tr {
+      padding: 0 10px; }
+    .table.table--responsive .tbody {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap; }
+      .table.table--responsive .tbody tr {
+        display: inline-block; }
+    .table.table--responsive .th {
+      display: block;
+      text-align: right; }
+    .table.table--responsive .td {
+      display: block;
+      min-height: 16px;
+      text-align: left; }
+
+/*# sourceMappingURL=dist/beyond-souls-ui.css.map */

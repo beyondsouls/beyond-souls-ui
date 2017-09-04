@@ -1,0 +1,79 @@
+@import "variables.scss";
+
+@mixin font-size($sizeValue: 1.6, $lineValue: $sizeValue * 1.5) {
+    font-size: ($sizeValue * 10) + px;
+    font-size: $sizeValue + rem;
+    line-height: $lineValue;
+}
+
+html {
+    font-size: $typo-initial-font-size;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    font-family: $typo-fallback-font;
+}
+
+h1 {
+    @include font-size(5);
+}
+
+h2 {
+    @include font-size(4.2);
+}
+
+h3 {
+    @include font-size(3.6);
+}
+
+h4 {
+    @include font-size(3);
+}
+
+h5 {
+    @include font-size(2.4);
+}
+
+h6 {
+    @include font-size(1.8);
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 2rem;
+    @include font-size(1.5);
+}
+
+@media (max-width: $breakpoint-phone) {
+    h1 {
+        @include font-size(4rem);
+    }
+
+    h2 {
+        @include font-size(3.5rem);
+    }
+
+    h3 {
+        @include font-size(3rem);
+    }
+
+    h4 {
+        @include font-size(2.6rem);
+    }
+
+    h5 {
+        @include font-size(2.2rem);
+    }
+
+    h6 {
+        @include font-size(1.8rem);
+    }
+}
