@@ -29,6 +29,22 @@
         height: 100%;
         width: 100%;
     }
+
+    &.o-grid__row--space-m {
+        margin: 1.5rem 0;
+    }
+
+    &.o-grid__row--space-l {
+        margin: 2rem 0;
+    }
+
+    &.o-grid__row--space-xl {
+        margin: 2.5rem 0;
+    }
+
+    &.o-grid__row--space-xxl {
+        margin: 2.5rem 0;
+    }
 }
 
 .o-grid__col {

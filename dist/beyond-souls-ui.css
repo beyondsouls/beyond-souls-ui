@@ -177,6 +177,14 @@ p {
   .o-grid__row.o-grid__row--autofit {
     height: 100%;
     width: 100%; }
+  .o-grid__row.o-grid__row--space-m {
+    margin: 1.5rem 0; }
+  .o-grid__row.o-grid__row--space-l {
+    margin: 2rem 0; }
+  .o-grid__row.o-grid__row--space-xl {
+    margin: 2.5rem 0; }
+  .o-grid__row.o-grid__row--space-xxl {
+    margin: 2.5rem 0; }
 
 .o-grid__col {
   flex: 1 1 0px; }
@@ -365,6 +373,7 @@ p {
   float: left; }
 
 .m-card {
+  position: relative;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -381,6 +390,25 @@ p {
       -moz-border-top-right-radius: 3px;
       -ms-border-top-right-radius: 3px;
       border-top-right-radius: 3px; }
+  .m-card .m-card__flag {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    padding: 4px 10px;
+    text-transform: uppercase;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 8px;
+    font-size: 0.8rem;
+    line-height: 0.88rem;
+    -webkit-border-top-left-radius: 3px;
+    -moz-border-top-left-radius: 3px;
+    -ms-border-top-left-radius: 3px;
+    border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-bottom-left-radius: 3px;
+    -ms-border-bottom-left-radius: 3px;
+    border-bottom-left-radius: 3px; }
   .m-card .m-card__header,
   .m-card .m-card__content,
   .m-card .m-card__actions {
@@ -404,6 +432,31 @@ p {
       line-height: 1.1rem; }
       .m-card .m-card__content *:last-child {
         margin: 0; }
+
+.m-card.m-card--cta {
+  background-color: transparent;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px; }
+  .m-card.m-card--cta img,
+  .m-card.m-card--cta .a-image {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px; }
+  .m-card.m-card--cta .m-card__cta {
+    width: 100%;
+    display: block;
+    text-align: center;
+    -webkit-border-top-left-radius: 0;
+    -moz-border-top-left-radius: 0;
+    -ms-border-top-left-radius: 0;
+    border-top-left-radius: 0;
+    -webkit-border-top-right-radius: 0;
+    -moz-border-top-right-radius: 0;
+    -ms-border-top-right-radius: 0;
+    border-top-right-radius: 0; }
 
 .m-stage {
   position: relative; }

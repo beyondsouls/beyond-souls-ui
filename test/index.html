@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../dist/beyond-souls-ui.css">
 </head>
 <body>
-    <header class="m-header">
+    <header class="m-header" id="top">
         <div class="o-grid">
             <div class="o-grid__row o-grid__row--layout-only o-grid__row--autofit">
                 <div class="m-header__brand o-grid__col o-grid__col-4">
@@ -29,18 +29,19 @@
         </div>
     </header>
     <main class="o-content">
-        <div class="m-stage">
+        <section class="m-stage">
             <img class="m-stage__background-image" src="http://placehold.it/1500x500" />
             <div class="m-stage__content">
                 <a class="a-button" href="#">
                     Order now
                 </a>
             </div>
-        </div>
-        <div class="o-grid">
-            <div class="o-grid__row">
+        </section>
+        <section class="o-grid">
+            <div class="o-grid__row o-grid__row--space-l">
                 <div class="o-grid__col o-grid__col-4">
                     <div class="m-card">
+                        <span class="m-card__flag">New!</span>
                         <picture class="m-card__cover-image">
                             <img src="http://placehold.it/500x500" alt="Cover" />
                         </picture>
@@ -64,13 +65,58 @@
                     </div>
                 </div>
                 <div class="o-grid__col o-grid__col-4">
-                    R2
+                    Hot Release 2
                 </div>
                 <div class="o-grid__col o-grid__col-4">
-                    R3
+                    Hot Release 3
                 </div>
             </div>
-        </div>
+            <div class="o-grid__row">
+                <div class="o-grid__col o-grid__col-3">
+                    <div href="#" class="m-card m-card--cta">
+                        <a href="#">
+                            <img src="http://placehold.it/500x500" alt="Cover">
+                        </a>
+                        <a href="" class="a-button m-card__cta">
+                            Buy Now!
+                        </a>
+                    </div>
+                </div>
+                <div class="o-grid__col o-grid__col-3">
+                    <div href="#" class="m-card m-card--cta">
+                        <a href="#">
+                            <img src="http://placehold.it/500x500" alt="Cover">
+                        </a>
+                        <a href="" class="a-button m-card__cta">
+                            Buy Now!
+                        </a>
+                    </div>
+                </div>
+                <div class="o-grid__col o-grid__col-3">
+                    <div href="#" class="m-card m-card--cta">
+                        <a href="#">
+                            <img src="http://placehold.it/500x500" alt="Cover">
+                        </a>
+                        <a href="" class="a-button m-card__cta">
+                            Buy Now!
+                        </a>
+                    </div>
+                </div>
+                <div class="o-grid__col o-grid__col-3">
+                    <div href="#" class="m-card m-card--cta">
+                        <a href="#">
+                            <img src="http://placehold.it/500x500" alt="Cover">
+                        </a>
+                        <a href="" class="a-button m-card__cta">
+                            Buy Now!
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section style="background-color: #dedede; padding: 40px 0">
+            <h4 class="u-text-align-center" style="text-transform: uppercase; font-weight: 800;">Contact us</h4>
+        </section>
     </main>
     <footer class="m-footer">
         <div class="o-grid">
