@@ -1,38 +1,42 @@
 {
+  "name": "@beyondsouls/ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/beyond-souls-ui.js",
+  "scripts": {
+    "test": "exit 0",
+    "build": "gulp"
+  },
+  "build": {
     "name": "beyond-souls-ui",
-    "version": "1.0.0",
-    "description": "",
-    "main": "dist/beyond-souls-ui.js",
-    "scripts": {
-        "test": "exit 0",
-        "build": "gulp"
-    },
-    "build": {
-        "name": "beyond-souls-ui",
-        "target": "./dist",
-        "config": "./build.json"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/beyondsouls/beyond-souls-ui.git"
-    },
-    "author": "Jan Biasi <jan@beyond-souls.com>",
-    "license": "Apache-2.0",
-    "bugs": {
-        "url": "https://github.com/beyondsouls/beyond-souls-ui/issues"
-    },
-    "homepage": "https://github.com/beyondsouls/beyond-souls-ui#readme",
-    "devDependencies": {
-        "gulp": "^3.9.1",
-        "gulp-clean-css": "^3.7.0",
-        "gulp-cli": "^1.4.0",
-        "gulp-concat": "^2.6.1",
-        "gulp-git": "^2.4.2",
-        "gulp-header": "^1.8.9",
-        "gulp-load-plugins": "^1.5.0",
-        "gulp-sass": "^3.1.0",
-        "gulp-size": "^2.1.0",
-        "gulp-sourcemaps": "^2.6.1",
-        "gulp-util": "^3.0.8"
-    }
+    "target": "./dist",
+    "config": "./build.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beyondsouls/beyond-souls-ui.git"
+  },
+  "author": "Jan Biasi <jan@beyond-souls.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/beyondsouls/beyond-souls-ui/issues"
+  },
+  "homepage": "https://github.com/beyondsouls/beyond-souls-ui#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-cli": "^1.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-git": "^2.4.2",
+    "gulp-header": "^1.8.9",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-size": "^2.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-util": "^3.0.8"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {}
 }
