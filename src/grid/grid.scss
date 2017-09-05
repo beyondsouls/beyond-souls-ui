@@ -1,4 +1,4 @@
-@import "./variables.scss";
+@import "../variables.scss";
 
 @mixin calculate-column-size($column) {
     width: 100% / $container-column-count * $column - $container-column-margin;

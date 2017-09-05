@@ -12,6 +12,9 @@
     "target": "./dist",
     "config": "./build.json"
   },
+  "docs": {
+    "target": "docs"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/beyondsouls/beyond-souls-ui.git"
@@ -38,5 +41,8 @@
   "directories": {
     "test": "test"
   },
-  "dependencies": {}
+  "dependencies": {
+    "dot": "^1.1.2",
+    "marked": "^0.3.6"
+  }
 }

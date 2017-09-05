@@ -1,0 +1,52 @@
+@import "../variables.scss";
+@import "../utils.scss";
+
+.a-button {
+    will-change: background-color, border, color;
+    @include transition(all 0.2s ease-in-out);
+    @include border-radius(3px);
+    @include font-size(0.8);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 8px 15px;
+    border: 2px solid $color-primary;
+    border-color: $color-primary;
+    background-color: $color-primary;
+    color: $color-primary-inverse;
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+        color: $color-primary;
+        background-color: transparent;
+    }
+
+    &.a-button--icon {
+        @include border-radius(999px);
+    }
+
+    &.a-button--large {
+        @include font-size(0.9);
+        padding: 12px 20px;
+    }
+
+    &.a-button--light {
+        border-color: $color-primary-inverse;
+        background-color: $color-primary-inverse;
+        color: $color-primary;
+
+        &:hover {
+            border-color: $color-primary;
+        }
+    }
+
+    &.a-button--contoured {
+        color: $color-primary;
+        background-color: transparent;
+
+        &:hover {
+            color: $color-primary-inverse;
+            background-color: $color-primary;
+        }
+    }
+}

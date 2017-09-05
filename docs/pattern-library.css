@@ -1,0 +1,17 @@
+.section--example {
+    padding: 40px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.m-button-bar.m-button-bar--example {
+    margin: 20px 0;
+}
+
+.m-button-bar.m-button-bar--example .a-button {
+    margin: 0 10px;
+}
+
+.o-grid--example .o-grid__col {
+    padding: 10px;
+    background-color: #eee;
+}
