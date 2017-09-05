@@ -403,6 +403,8 @@ p {
   float: left; }
 
 .m-card {
+  display: inline-block;
+  width: auto;
   position: relative;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;

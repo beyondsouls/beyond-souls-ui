@@ -4,7 +4,7 @@
 }
 
 .m-button-bar.m-button-bar--example {
-    margin: 20px 0;
+    margin: 20px;
 }
 
 .m-button-bar.m-button-bar--example .a-button {
@@ -14,4 +14,21 @@
 .o-grid--example .o-grid__col {
     padding: 10px;
     background-color: #eee;
+}
+
+.code--example {
+    background-color: #eee;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 0 6px;
+    display: inline-block;
+}
+
+.o-grid--example-with-description > .o-grid__row:nth-child(n + 1) > .o-grid__col > * {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.o-grid--example-with-description .o-grid__row:nth-child(2) {
+    margin-bottom: 30px;
 }

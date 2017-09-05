@@ -9,8 +9,8 @@ const patternLibraryTemplate = fs.readFileSync(
     "utf8"
 );
 const patternLibraryStreams = config.components.map(component => ({
-    path: `../src/${component}/${component}.html`,
-    docs: `../src/${component}/README.md`,
+    path: path.join(__dirname, `../src/${component}/${component}.html`),
+    docs: path.join(`../src/${component}/README.md`),
     name: component
 }));
 
