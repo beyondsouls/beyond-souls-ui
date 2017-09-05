@@ -241,7 +241,8 @@ p {
   background-color: #000000;
   color: #ffffff; }
   .m-header .m-header__brand {
-    padding: 12px; }
+    padding: 12px;
+    height: 80px; }
   .m-header .m-header__navigation {
     font-family: "Roboto Mono", monospace;
     line-height: 80px;

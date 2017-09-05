@@ -9,11 +9,13 @@
 </header>
 <body>
 	{{~it.patterns :pattern:index}}
-		<section class="o-section--example" data-count="{{=index}}" data-name="{{=pattern.name}}">
+		<section class="o-section--example" data-count="{{=index}}" data-name="{{=pattern.name}}" id="{{=pattern.name}}">
 			<div class="o-grid">
 				<div class="o-grid__row">
 					<div class="o-grid__col o-grid__col-12">
-						<h2 class="o-section__title">{{=pattern.name}}</h2>
+						<h2 class="o-section__title">
+							<a href="#{{=pattern.name}}">{{=pattern.name}}</a>
+						</h2>
 					</div>
 				</div>
 				<div class="o-grid__row">
