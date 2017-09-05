@@ -10,6 +10,10 @@
 	<link rel="stylesheet" href="{{= it.uiAsset}}" />
 </header>
 <body>
+	<section class="o-section--example o-section--example-intro">
+		<img src="logo.png" alt="Beyond Souls Logo">
+		<p>Pattern Library for the general design of web-application related to <a href="https://beyond-souls.com">Beyond Souls</a></p>
+	</section>
 	{{~it.patterns :pattern:index}}
 		<section class="o-section--example" data-count="{{=index}}" data-name="{{=pattern.name}}" id="{{=pattern.name}}">
 			<div class="o-grid">
