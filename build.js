@@ -9,6 +9,7 @@ exports = module.exports = {
         "button",
         "card",
         "stage",
+        "input",
         "widget",
         "list",
         "tag"

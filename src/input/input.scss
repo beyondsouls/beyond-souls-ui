@@ -1,0 +1,63 @@
+@import "../variables.scss";
+@import "../utils.scss";
+
+$input-spacing: 8px;
+
+input,
+input:focus {
+    outline: none;
+}
+
+.a-input {
+    padding: $input-spacing;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: $color-primary-inverse;
+    border: 2px solid $color-separator;
+    @include font-size(0.9);
+    @include border-radius(2px);
+    @include transition(all 0.2s ease-in-out);
+    @include input-placeholder {
+        color: $color-separator;
+    }
+
+    &.a-input--fullwidth {
+        display: block;
+        width: 100%;
+    }
+
+    &:hover {
+        border-color: darken($color-separator, 10%);
+    }
+
+    &:focus {
+        outline: none;
+        border-color: $color-primary;
+    }
+
+    &.a-input--multiline {
+        min-height: 7rem;
+    }
+
+    &.a-input--icon {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+
+        .a-input__icon {
+            padding: $input-spacing;
+            background: $color-primary;
+        }
+
+        .a-input__field {
+            border: none;
+            flex: 1;
+            background-color: transparent;
+        }
+
+        .input-icon,
+        .input-with-icon {
+            padding: 10px;
+        }
+    }
+}

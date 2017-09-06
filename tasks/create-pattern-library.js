@@ -1,6 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const dot = require("dot");
+const ncp = require("ncp");
 const marked = require("marked");
 const config = require("../build");
 const tasks = require("./index");
@@ -18,15 +19,11 @@ exports = module.exports = (gulp, plugins, pkg, config) => {
     return done => {
         let contents = [];
 
-        fs
-            .createReadStream(
-                path.join(__dirname, "..", `${pkg.build.target}/${pkg.build.name}.css`)
-            )
-            .pipe(
-                fs.createWriteStream(
-                    path.join(__dirname, "..", `${pkg.docs.target}/${pkg.build.name}.css`)
-                )
-            );
+        ncp(
+            path.join(__dirname, "..", pkg.build.target),
+            path.join(__dirname, "..", pkg.docs.target, "assets"),
+            err => {}
+        );
 
         patternLibraryStreams.forEach(pattern => {
             let fileContents;

@@ -10,4 +10,4 @@ gulp.task("build", ["minify-css", "minify-js"]);
 gulp.task("create-pattern-library", ["build"], tasks.load("create-pattern-library"));
 gulp.task("watch", tasks.load("watch"));
 
-gulp.task("default", ["build-ui", "create-pattern-library"]);
+gulp.task("default", ["build", "create-pattern-library"]);

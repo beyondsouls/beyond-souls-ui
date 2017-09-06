@@ -4,8 +4,9 @@ exports = module.exports = (gulp, plugins, pkg) => {
     return () => {
         return gulp
             .src([`${pkg.build.target}/${pkg.build.name}.js`])
+            .pipe(plugins.debug())
             .pipe(plugins.sourcemaps.init())
-            .pipe(plugins.cleanCSS())
+            .pipe(plugins.uglify())
             .pipe(plugins.header(tasks.generateHeader("Beyond Souls UI", pkg)))
             .pipe(plugins.size())
             .pipe(
