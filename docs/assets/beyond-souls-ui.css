@@ -1,5 +1,5 @@
 /**
-    * Beyond Souls UI v1.0.0
+    * Beyond Souls UI v1.1.2
     * Copyright 2017 Beyond Souls Records KLG
     * Released under the Apache License 2.0
     */
@@ -987,13 +987,16 @@ input:focus {
   -webkit-transform: skew(-20deg);
   transform: skew(-20deg); }
   .a-tag .a-tag__label {
-    will-change: color;
-    width: 100%;
-    display: inline-block;
     letter-spacing: 0.8px;
     text-transform: uppercase;
     padding: 2px 8px 4px;
-    word-break: keep-all;
+    word-break: keep-all; }
+    .a-tag .a-tag__label.a-tag__label--icon {
+      padding: 2px 8px 4px 4px; }
+  .a-tag .a-tag__label,
+  .a-tag .a-icon {
+    will-change: color;
+    display: inline-block;
     font-size: 8.5px;
     font-size: 0.85rem;
     line-height: 0.935rem;
@@ -1004,6 +1007,9 @@ input:focus {
     transition: color 0.2s ease-in-out;
     -webkit-transform: skew(20deg);
     transform: skew(20deg); }
+  .a-tag .a-icon {
+    font-weight: 800;
+    padding: 0 0 0 8px; }
   .a-tag:hover {
     background-color: transparent; }
     .a-tag:hover .a-tag__label {

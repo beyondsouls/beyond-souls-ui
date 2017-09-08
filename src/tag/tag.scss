@@ -13,16 +13,29 @@ $tag-skew-effect: 20;
     @include transform(skew(-#{$tag-skew-effect}deg));
 
     .a-tag__label {
-        will-change: color;
-        width: 100%;
-        display: inline-block;
         letter-spacing: 0.8px;
         text-transform: uppercase;
         padding: 2px 8px 4px;
         word-break: keep-all;
+
+        &.a-tag__label--icon {
+            padding: 2px 8px 4px 4px;
+        }
+    }
+
+    // Support icons in tags
+    .a-tag__label,
+    .a-icon {
+        will-change: color;
+        display: inline-block;
         @include font-size(0.85);
         @include transition(color 0.2s ease-in-out);
         @include transform(skew(#{$tag-skew-effect}deg));
+    }
+
+    .a-icon {
+        font-weight: 800;
+        padding: 0 0 0 8px;
     }
 
     &:hover {
