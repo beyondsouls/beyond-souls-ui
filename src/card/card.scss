@@ -40,7 +40,7 @@ $card-border-radius: 3px;
     }
 
     .m-card__header {
-        border-bottom: 1px solid $color-separator;
+        // border-bottom: 1px solid $color-separator;
 
         .m-card__header-title,
         .m-card__header-subtitle {
@@ -48,12 +48,14 @@ $card-border-radius: 3px;
         }
 
         .m-card__header-title {
-            @include font-size(2);
+            @include font-size(1.5);
             font-weight: 800;
             text-transform: uppercase;
         }
 
         .m-card__header-subtitle {
+            @include font-size(1);
+            text-transform: uppercase;
         }
     }
 
@@ -61,7 +63,7 @@ $card-border-radius: 3px;
         border-bottom: 1px solid $color-separator;
 
         * {
-            @include font-size(1);
+            @include font-size(0.9);
 
             &:last-child {
                 margin: 0;

@@ -10,6 +10,7 @@ const patternLibraryTemplate = fs.readFileSync(
     "utf8"
 );
 const patternLibraryStreams = config.components.map(component => ({
+    base: path.join(__dirname, `../src/${component}`),
     path: path.join(__dirname, `../src/${component}/${component}.html`),
     docs: path.join(`../src/${component}/README.md`),
     name: component
@@ -28,6 +29,7 @@ exports = module.exports = (gulp, plugins, pkg, config) => {
         patternLibraryStreams.forEach(pattern => {
             let fileContents;
             let docContents;
+            let docData = {};
 
             try {
                 if (fs.existsSync(pattern.path)) {
@@ -35,6 +37,9 @@ exports = module.exports = (gulp, plugins, pkg, config) => {
                 }
                 if (fs.existsSync(pattern.docs)) {
                     docContents = fs.readFileSync(pattern.docs, "utf8");
+                }
+                if (fs.existsSync(`${pattern.base}/data.json`)) {
+                    docData = require(`${pattern.base}/data.json`, "utf8");
                 }
             } catch (e) {
                 plugins.util.log(`Failed reading pattern ${pattern.path}: ${e.stack || e}`);
@@ -46,6 +51,11 @@ exports = module.exports = (gulp, plugins, pkg, config) => {
                 optionalMarkdownDocs = marked(docContents || "");
             } catch (e) {
                 plugins.util.log(`Failed transpiling docs for ${pattern.name}: ${e.stack || e}`);
+            }
+
+            if (fileContents) {
+                const optimisticTemplate = dot.template(fileContents);
+                fileContents = optimisticTemplate(docData);
             }
 
             contents.push({

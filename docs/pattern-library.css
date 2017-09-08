@@ -22,6 +22,7 @@
 .o-section--example.o-section--example-intro p {
     max-width: 500px;
     margin: 0 auto;
+    padding: 10px 20px;
     text-align: center;
     text-transform: uppercase;
     font-size: 14px;
@@ -38,7 +39,7 @@
 }
 
 .m-button-bar.m-button-bar--example .a-button {
-    margin: 0 10px;
+    margin: 20px;
 }
 
 .o-grid--example .o-grid__col {
@@ -61,4 +62,32 @@
 
 .o-grid--example-with-description .o-grid__row:nth-child(2) {
     margin-bottom: 30px;
+}
+
+.example--icon-grid {
+    overflow: hidden;
+}
+
+.example--icon-grid .example--icon {
+    width: 25%;
+    float: left;
+    text-align: center;
+    min-height: 100px;
+}
+
+.example--icon-grid .a-icon {
+    font-size: 35px;
+    display: block;
+}
+
+.example--icon-grid .code--example {
+    margin-top: 10px;
+    font-size: 12px;
+    display: none;
+}
+
+@media all and (min-width: 700px) {
+    .example--icon-grid .code--example {
+        display: inline-block;
+    }
 }

@@ -8,6 +8,10 @@
     max-width: $container-max-width;
     margin: 0 auto;
     width: $container-spread-width;
+
+    &.o-grid--spread {
+        width: 95%;
+    }
 }
 
 .o-grid__row {

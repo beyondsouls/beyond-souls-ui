@@ -2,6 +2,7 @@ exports = module.exports = {
     globals: ["base", "typography"],
     components: [
         "grid",
+        "icon",
         "header",
         "footer",
         "navigation",

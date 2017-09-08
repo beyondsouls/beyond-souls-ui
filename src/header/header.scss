@@ -1,4 +1,5 @@
 @import "../variables.scss";
+@import "../queries.scss";
 
 .m-header {
     height: $header-height;
@@ -18,6 +19,49 @@
 
         a:hover {
             border-color: $color-primary-inverse;
+        }
+
+        .a-list li {
+            line-height: $header-height;
+        }
+    }
+
+    @include mq("tablet", "max") {
+        height: auto;
+
+        .m-header__brand {
+            padding: 15px 0 0 0;
+            margin-top: 0;
+
+            > * {
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
+
+        .m-header__navigation {
+            .a-list {
+                width: 100%;
+            }
+
+            li {
+                line-height: initial;
+                width: auto;
+            }
+        }
+    }
+
+    @include mq("phone", "max") {
+        .m-header__navigation {
+            .a-list {
+                li {
+                    line-height: initial;
+                    display: block;
+                    width: 100%;
+                    padding: 10px;
+                    text-align: center;
+                }
+            }
         }
     }
 }
